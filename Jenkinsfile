@@ -7,6 +7,7 @@ pipeline {
         IMAGE_TAG = "build-${BUILD_NUMBER}"
         GITHUB_URL = 'https://github.com/valachmr/225-lab3-5.git'             //<------change this
         KUBECONFIG = credentials('valachmr-225-sp26')                         //<------change this
+    }
 
     stages {
         stage('Checkout') {
@@ -86,4 +87,3 @@ pipeline {
         }
     }
 }
-
